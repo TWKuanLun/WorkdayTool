@@ -1,0 +1,357 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bsvc="urn:com.workday/bsvc">
+  <soapenv:Header>
+    <bsvc:Workday_Common_Header>
+      <!--Optional:-->
+      <bsvc:Include_Reference_Descriptors_In_Response>?</bsvc:Include_Reference_Descriptors_In_Response>
+    </bsvc:Workday_Common_Header>
+  </soapenv:Header>
+  <soapenv:Body>
+    <bsvc:Put_Location_Request bsvc:Add_Only="?" bsvc:version="?">
+      <!--Optional:-->
+      <bsvc:Location_Reference bsvc:Descriptor="?">
+        <!--Zero or more repetitions:-->
+        <bsvc:ID bsvc:type="?">?</bsvc:ID>
+      </bsvc:Location_Reference>
+      <bsvc:Location_Data>
+        <!--Optional:-->
+        <bsvc:Location_ID>?</bsvc:Location_ID>
+        <!--Optional:-->
+        <bsvc:Effective_Date>?</bsvc:Effective_Date>
+        <bsvc:Location_Name>?</bsvc:Location_Name>
+        <!--1 or more repetitions:-->
+        <bsvc:Location_Usage_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Location_Usage_Reference>
+        <!--Zero or more repetitions:-->
+        <bsvc:Location_Type_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Location_Type_Reference>
+        <!--Zero or more repetitions:-->
+        <bsvc:Location_Attribute_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Location_Attribute_Reference>
+        <!--Optional:-->
+        <bsvc:Superior_Location_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Superior_Location_Reference>
+        <!--Optional:-->
+        <bsvc:Inactive>?</bsvc:Inactive>
+        <!--Optional:-->
+        <bsvc:Latitude>?</bsvc:Latitude>
+        <!--Optional:-->
+        <bsvc:Longitude>?</bsvc:Longitude>
+        <!--Optional:-->
+        <bsvc:Altitude>?</bsvc:Altitude>
+        <!--Optional:-->
+        <bsvc:Time_Profile_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Time_Profile_Reference>
+        <!--Optional:-->
+        <bsvc:Locale_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Locale_Reference>
+        <!--Optional:-->
+        <bsvc:Display_Language_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Display_Language_Reference>
+        <!--Optional:-->
+        <bsvc:Time_Zone_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Time_Zone_Reference>
+        <!--Optional:-->
+        <bsvc:Default_Currency_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Default_Currency_Reference>
+        <!--Optional:-->
+        <bsvc:External_Name>?</bsvc:External_Name>
+        <!--Optional:-->
+        <bsvc:Default_Job_Posting_Location_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Default_Job_Posting_Location_Reference>
+        <!--Optional:-->
+        <bsvc:Trade_Name>?</bsvc:Trade_Name>
+        <!--Optional:-->
+        <bsvc:Worksite_ID_Code>?</bsvc:Worksite_ID_Code>
+        <!--Optional:-->
+        <bsvc:Global_Location_Number>?</bsvc:Global_Location_Number>
+        <!--Optional:-->
+        <bsvc:Location_Identifier>?</bsvc:Location_Identifier>
+        <!--Optional:-->
+        <bsvc:Instructional_Site_Data>
+          <bsvc:Academic_Unit_Reference bsvc:Descriptor="?">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="?">?</bsvc:ID>
+          </bsvc:Academic_Unit_Reference>
+          <bsvc:Instructional_Site_Data_Capacity>?</bsvc:Instructional_Site_Data_Capacity>
+          <!--Optional:-->
+          <bsvc:Off-Site>?</bsvc:Off-Site>
+          <!--Optional:-->
+          <bsvc:Instructional_Use_Only>?</bsvc:Instructional_Use_Only>
+        </bsvc:Instructional_Site_Data>
+        <!--Optional:-->
+        <bsvc:Student_Housing_Assignment_Data>
+          <bsvc:Academic_Unit_Reference bsvc:Descriptor="?">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="?">?</bsvc:ID>
+          </bsvc:Academic_Unit_Reference>
+        </bsvc:Student_Housing_Assignment_Data>
+        <!--Optional:-->
+        <bsvc:Contact_Data>
+          <!--Zero or more repetitions:-->
+          <bsvc:Address_Data bsvc:Formatted_Address="?" bsvc:Address_Format_Type="?" bsvc:Defaulted_Business_Site_Address="?" bsvc:Delete="?" bsvc:Do_Not_Replace_All="?" bsvc:Effective_Date="?">
+            <!--Optional:-->
+            <bsvc:Country_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Country_Reference>
+            <!--Optional:-->
+            <bsvc:Last_Modified>?</bsvc:Last_Modified>
+            <!--Zero or more repetitions:-->
+            <bsvc:Address_Line_Data bsvc:Descriptor="?" bsvc:Type="?">?</bsvc:Address_Line_Data>
+            <!--Optional:-->
+            <bsvc:Municipality>?</bsvc:Municipality>
+            <!--Optional:-->
+            <bsvc:Country_City_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?" bsvc:parent_id="?" bsvc:parent_type="?">?</bsvc:ID>
+            </bsvc:Country_City_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Submunicipality_Data bsvc:Address_Component_Name="?" bsvc:Type="?">?</bsvc:Submunicipality_Data>
+            <!--Optional:-->
+            <bsvc:Country_Region_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Country_Region_Reference>
+            <!--Optional:-->
+            <bsvc:Country_Region_Descriptor>?</bsvc:Country_Region_Descriptor>
+            <!--Zero or more repetitions:-->
+            <bsvc:Subregion_Data bsvc:Descriptor="?" bsvc:Type="?">?</bsvc:Subregion_Data>
+            <!--Optional:-->
+            <bsvc:Postal_Code>?</bsvc:Postal_Code>
+            <!--Zero or more repetitions:-->
+            <bsvc:Usage_Data bsvc:Public="?">
+              <!--1 or more repetitions:-->
+              <bsvc:Type_Data bsvc:Primary="?">
+                <bsvc:Type_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                </bsvc:Type_Reference>
+              </bsvc:Type_Data>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Reference>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Tenanted_Reference>
+              <!--Optional:-->
+              <bsvc:Comments>?</bsvc:Comments>
+            </bsvc:Usage_Data>
+            <!--Optional:-->
+            <bsvc:Number_of_Days>?</bsvc:Number_of_Days>
+            <!--Optional:-->
+            <bsvc:Municipality_Local>?</bsvc:Municipality_Local>
+            <!--Optional:-->
+            <bsvc:Address_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Address_Reference>
+            <!--Optional:-->
+            <bsvc:Address_ID>?</bsvc:Address_ID>
+          </bsvc:Address_Data>
+          <!--Zero or more repetitions:-->
+          <bsvc:Phone_Data bsvc:Area_Code="?" bsvc:Tenant_Formatted_Phone="?" bsvc:International_Formatted_Phone="?" bsvc:Delete="?" bsvc:Do_Not_Replace_All="?">
+            <!--Optional:-->
+            <bsvc:Country_ISO_Code>?</bsvc:Country_ISO_Code>
+            <!--Optional:-->
+            <bsvc:International_Phone_Code>?</bsvc:International_Phone_Code>
+            <!--Optional:-->
+            <bsvc:Phone_Number>?</bsvc:Phone_Number>
+            <!--Optional:-->
+            <bsvc:Phone_Extension>?</bsvc:Phone_Extension>
+            <!--Optional:-->
+            <bsvc:Phone_Device_Type_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Phone_Device_Type_Reference>
+            <!--Zero or more repetitions:-->
+            <bsvc:Usage_Data bsvc:Public="?">
+              <!--1 or more repetitions:-->
+              <bsvc:Type_Data bsvc:Primary="?">
+                <bsvc:Type_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                </bsvc:Type_Reference>
+              </bsvc:Type_Data>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Reference>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Tenanted_Reference>
+              <!--Optional:-->
+              <bsvc:Comments>?</bsvc:Comments>
+            </bsvc:Usage_Data>
+            <!--Optional:-->
+            <bsvc:Phone_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Phone_Reference>
+            <!--Optional:-->
+            <bsvc:ID>?</bsvc:ID>
+          </bsvc:Phone_Data>
+          <!--Zero or more repetitions:-->
+          <bsvc:Email_Address_Data bsvc:Delete="?" bsvc:Do_Not_Replace_All="?">
+            <!--Optional:-->
+            <bsvc:Email_Address>?</bsvc:Email_Address>
+            <!--Optional:-->
+            <bsvc:Email_Comment>?</bsvc:Email_Comment>
+            <!--Zero or more repetitions:-->
+            <bsvc:Usage_Data bsvc:Public="?">
+              <!--1 or more repetitions:-->
+              <bsvc:Type_Data bsvc:Primary="?">
+                <bsvc:Type_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                </bsvc:Type_Reference>
+              </bsvc:Type_Data>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Reference>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Tenanted_Reference>
+              <!--Optional:-->
+              <bsvc:Comments>?</bsvc:Comments>
+            </bsvc:Usage_Data>
+            <!--Optional:-->
+            <bsvc:Email_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Email_Reference>
+            <!--Optional:-->
+            <bsvc:ID>?</bsvc:ID>
+          </bsvc:Email_Address_Data>
+          <!--Zero or more repetitions:-->
+          <bsvc:Instant_Messenger_Data bsvc:Delete="?" bsvc:Do_Not_Replace_All="?">
+            <!--Optional:-->
+            <bsvc:Instant_Messenger_Address>?</bsvc:Instant_Messenger_Address>
+            <!--Optional:-->
+            <bsvc:Instant_Messenger_Type_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Instant_Messenger_Type_Reference>
+            <!--Optional:-->
+            <bsvc:Instant_Messenger_Comment>?</bsvc:Instant_Messenger_Comment>
+            <!--Zero or more repetitions:-->
+            <bsvc:Usage_Data bsvc:Public="?">
+              <!--1 or more repetitions:-->
+              <bsvc:Type_Data bsvc:Primary="?">
+                <bsvc:Type_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                </bsvc:Type_Reference>
+              </bsvc:Type_Data>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Reference>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Tenanted_Reference>
+              <!--Optional:-->
+              <bsvc:Comments>?</bsvc:Comments>
+            </bsvc:Usage_Data>
+            <!--Optional:-->
+            <bsvc:Instant_Messenger_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Instant_Messenger_Reference>
+            <!--Optional:-->
+            <bsvc:ID>?</bsvc:ID>
+          </bsvc:Instant_Messenger_Data>
+          <!--Zero or more repetitions:-->
+          <bsvc:Web_Address_Data bsvc:Delete="?" bsvc:Do_Not_Replace_All="?">
+            <!--Optional:-->
+            <bsvc:Web_Address>?</bsvc:Web_Address>
+            <!--Optional:-->
+            <bsvc:Web_Address_Comment>?</bsvc:Web_Address_Comment>
+            <!--Zero or more repetitions:-->
+            <bsvc:Usage_Data bsvc:Public="?">
+              <!--1 or more repetitions:-->
+              <bsvc:Type_Data bsvc:Primary="?">
+                <bsvc:Type_Reference bsvc:Descriptor="?">
+                  <!--Zero or more repetitions:-->
+                  <bsvc:ID bsvc:type="?">?</bsvc:ID>
+                </bsvc:Type_Reference>
+              </bsvc:Type_Data>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Reference>
+              <!--Zero or more repetitions:-->
+              <bsvc:Use_For_Tenanted_Reference bsvc:Descriptor="?">
+                <!--Zero or more repetitions:-->
+                <bsvc:ID bsvc:type="?">?</bsvc:ID>
+              </bsvc:Use_For_Tenanted_Reference>
+              <!--Optional:-->
+              <bsvc:Comments>?</bsvc:Comments>
+            </bsvc:Usage_Data>
+            <!--Optional:-->
+            <bsvc:Web_Address_Reference bsvc:Descriptor="?">
+              <!--Zero or more repetitions:-->
+              <bsvc:ID bsvc:type="?">?</bsvc:ID>
+            </bsvc:Web_Address_Reference>
+            <!--Optional:-->
+            <bsvc:ID>?</bsvc:ID>
+          </bsvc:Web_Address_Data>
+        </bsvc:Contact_Data>
+        <!--Optional:-->
+        <bsvc:Integration_ID_Data>
+          <!--1 or more repetitions:-->
+          <bsvc:ID bsvc:System_ID="?">?</bsvc:ID>
+        </bsvc:Integration_ID_Data>
+        <!--Zero or more repetitions:-->
+        <bsvc:Location_Hierarchy_Reference bsvc:Descriptor="?">
+          <!--Zero or more repetitions:-->
+          <bsvc:ID bsvc:type="?">?</bsvc:ID>
+        </bsvc:Location_Hierarchy_Reference>
+        <!--Zero or more repetitions:-->
+        <bsvc:Integration_Field_Override_Data>
+          <!--Optional:-->
+          <bsvc:Field_Reference bsvc:Descriptor="?">
+            <!--Zero or more repetitions:-->
+            <bsvc:ID bsvc:type="?" bsvc:parent_id="?" bsvc:parent_type="?">?</bsvc:ID>
+          </bsvc:Field_Reference>
+          <!--Optional:-->
+          <bsvc:Value>?</bsvc:Value>
+        </bsvc:Integration_Field_Override_Data>
+      </bsvc:Location_Data>
+    </bsvc:Put_Location_Request>
+  </soapenv:Body>
+</soapenv:Envelope>
